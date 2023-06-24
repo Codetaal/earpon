@@ -1,0 +1,16 @@
+<article class="flex flex-col pl-3.5 pt-0 pb-0 h-full group">
+    <a (click)="routeProductSingle(product.id)" class="block mb-4 cursor-pointer">
+        <figure class="w-full">
+            <img src="{{ product.cover }}" class="w-full mix-blend-multiply aspect-square" alt="{{ product.title }}">
+        </figure>
+    </a>
+    <h2 class="mb-1 uppercase">
+        <a (click)="routeProductSingle(product.id)" class="cursor-pointer hover:text-blue-700">
+            {{ product.title }}
+        </a>
+    </h2>
+    <div class="flex justify-between mb-3">
+        <span class="text-gray-400 line-through">&euro; 39,00</span>
+        <span class="">&euro; 29,00</span>
+    </div>
+</article>

@@ -1,0 +1,103 @@
+<header class="top-0 z-10 w-full bg-white group px-3.5 lg:px-6 py-6 group/header" data-js="header"
+    data-is-fixed="false">
+    <div class="grid grid-flow-row gap-y-6 lg:gap-6 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 lg:grid-flow-col">
+        <div class="flex items-center justify-between lg:block">
+            <div class="border-l border-gray-900 pl-3.5 pt-2 pb-2 relative w-full flex justify-between items-center">
+                <h1 data-js="logo">
+                    <a href="/" class="tracking-[8px]">EAR<br class="hidden lg:inline">PON</a>
+                    <div class="hidden w-full h-8 lg:block" data-js="spacer"></div>
+                </h1>
+                <span class="absolute right-0 cursor-pointer select-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                        stroke="currentColor" class="block w-6 h-6 lg:hidden group-hover:hidden lg:group-hover:hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                        stroke="currentColor" class="hidden w-6 h-6 lg:hidden group-hover:block lg:group-hover:hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <div class="hidden lg:block 3xl:col-span-2" data-js="menu">
+            <div class="border-l border-gray-900 pl-3.5 pt-2 pb-2">
+                <nav class="relative" data-js="menu">
+                    <!-- menu 1 -->
+                    <ul class="pl-5 uppercase [&>li>a:hover]:text-blue-700" *ngIf="parentId > 0">
+                        <li class="is-active group/menu-item">
+                            <a (click)="routeProducts()" class="flex items-center uppercase cursor-pointer gap-x-2">
+                                <span
+                                    class="block absolute group-hover/menu-item:bg-blue-700 -left-0 w-2.5 h-2.5 bg-black rounded-full group-[.is-fixed]/header:block">
+                                </span>
+                                <span class="font-bold">Airpods/Buds</span>
+                            </a>
+                        </li>
+                        <li class=""><a href="/">iPad/MacBook</a></li>
+                        <li class=""><a href="/">Key Ring</a></li>
+                        <li class=""><a href="/">Life</a></li>
+                    </ul>
+                    <!-- menu 2 -->
+                    <ul class="pl-5 uppercase [&>li>a:hover]:text-blue-700" *ngIf="parentId === 0">
+                        <li>
+                            <a class="flex items-center gap-x-2" href="/">Phone case</a>
+                        </li>
+                        <li class="is-active group/menu-item">
+                            <a class="flex items-center gap-x-2" href="/">
+                                <span
+                                    class="block absolute -left-0 w-2.5 h-2.5 bg-black rounded-full group-hover/menu-item:bg-blue-700">
+                                </span>
+                                <span class="font-bold">Airpods/Buds</span>
+                            </a>
+                        </li>
+                        <li><a href="/">iPad/MacBook</a></li>
+                        <li><a href="/">Key Ring</a></li>
+                        <li><a href="/">Life</a></li>
+                        <li><a href="/">Stationary</a></li>
+                        <li><a href="/">Gift</a></li>
+                    </ul>
+                </nav>
+                <div class="hidden w-full h-4 lg:block" data-js="spacer"></div>
+            </div>
+        </div>
+        <div class="hidden 2xl:col-span-2 lg:block" data-js="site-summary">
+            <div class="grid grid-flow-row gap-6 ">
+                <section class="pt-2 pb-2 px-3.5 lg:px-0 border-l border-gray-900 lg:border-0" data-js="menu2">
+                    <ul class="items-center lg:flex lg:justify-end gap-x-5 [&>li>a:hover]:text-blue-700">
+                        <li>
+                            <a href="#" class="uppercase text-md ">
+                                about
+                            </a>
+                        </li>
+                        <li>
+                            <a (click)="routeProducts()" class="uppercase cursor-pointer text-md">
+                                shop
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uppercase text-md snipcart-checkout">
+                                cart(<span class="snipcart-items-count">...</span>)
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="border-l border-gray-900 px-3.5 pt-2 pb-2">
+                    <div class="hidden w-full h-5 lg:block" data-js="spacer"></div>
+                    <p class="[&>a]:underline [&>a:hover]:text-blue-700 [&>a]:underline [&>a]:underline-offset-4">
+                        8 BOOKS A YEAR is a <a href="">curated</a> subscription of outstanding non-fiction books.
+                        You
+                        can
+                        take
+                        up
+                        at any time
+                        and
+                        we ship worldwide from Berlin. It's for everyone who loves to be regularly hijacked into
+                        unknown
+                        territory.
+                        Please see below our selection so far.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+</header>

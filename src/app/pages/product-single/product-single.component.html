@@ -1,0 +1,43 @@
+<div
+    class="mt-0 lg:mt-12 px-3.5 lg:px-6 grid grid-flow-row gap-y-6 lg:gap-6 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 lg:grid-flow-col relative mb-12">
+    <div class="lg:col-span-2 2xl:col-start-2">
+        <div class="border-l border-gray-900 pl-3.5 relative w-full">
+            <div class="overflow-hidden overflow-x-auto snap-x snap-mandatory scrollbar scrollbar-x">
+                <div class="flex pointer-events-none select-none">
+                    <figure class="flex-shrink-0 w-full snap-start">
+                        <img src="{{ product.cover }}" class="w-full aspect-square" alt="">
+                    </figure>
+                    <figure class="flex-shrink-0 w-full snap-start">
+                        <img src="assets/images/5.jpg" class="w-full aspect-square" alt="">
+                    </figure>
+                    <figure class="flex-shrink-0 w-full snap-start">
+                        <img src="assets/images/6.jpg" class="w-full aspect-square" alt="">
+                    </figure>
+                    <figure class="flex-shrink-0 w-full snap-start">
+                        <img src="assets/images/9.jpg" class="w-full aspect-square" alt="">
+                    </figure>
+                </div>
+            </div>
+            <!-- <div class="grid gap-x-3.5 grid-cols-4">
+                <div class="flex-shrink ">
+                    <img src="assets/images/1.jpg" class=" aspect-square">
+                </div>
+                <div class=""><img src="assets/images/2.jpg" class=" aspect-square"></div>
+                <div class=""><img src="assets/images/3.jpg" class=" aspect-square"></div>
+                <div class=""><img src="assets/images/4.jpg" class=" aspect-square"></div>
+            </div> -->
+        </div>
+    </div>
+    <div class="2xl:col-start-4"><!-- just for border alignment -->
+        <app-receipt [product]="product"></app-receipt>
+    </div>
+</div>
+
+<section class="px-3.5 lg:px-6 mt-0 ">
+    <!-- <h2 class="mb-4 uppercase">Lorem ipsum dorem</h2> -->
+    <div class="grid lg:mt-12 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 gap-x-6 gap-y-9">
+        <ng-container *ngFor="let product of products">
+            <app-product [product]="product"></app-product>
+        </ng-container>
+    </div>
+</section>

@@ -1,0 +1,18 @@
+<!-- <section class="flex items-center py-4 bg-pink-400">
+        <span class="text-xs tracking-wide text-white uppercase truncate">
+            summer sale // summer sale // summer sale // summer sale // summer sale // summer sale // summer sale //
+            summer sale // summer sale // summer sale // summer sale // summer sale // summer sale // summer sale //
+            summer sale // summer sale // summer sale // summer sale // summer sale //
+        </span>
+    </section> -->
+<!-- <section class="w-full">
+        <img class="w-full"
+            src="https://file.cafe24cos.com/banner-admin-live/upload/earpearp/2fc4f09d-53fd-432c-dfaa-5d4475c14f42.gif"
+            alt="">
+    </section> -->
+<section
+    class="grid px-3.5 lg:px-6 mt-0 lg:mt-12 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 gap-x-6 gap-y-9">
+    <ng-container *ngFor="let product of products">
+        <app-product [product]="product"></app-product>
+    </ng-container>
+</section>
