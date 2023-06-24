@@ -1,0 +1,113 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Headaset Chichi",
+      "slug": "headaset-chichi",
+      "category": "earpearp",
+      "summary": "<p>Including a unique hand-drawn\r\nadvertisement by the author,\r\nfor our subscribers</p>",
+      "price": 15.0,
+      "date_created": "string",
+      "date_updated": "string"
+    },
+    {
+      "id": 2,
+      "title": "Headaset Chichi",
+      "slug": "headaset-chichi",
+      "category": "earpearp",
+      "cover": "assets/images/2.jpg",
+      "summary": "<p>Sam Chermayeff (et al.)<br>\r\nCreatures<br>\r\nApartamento Publishing, 2020</p>\r\n<p>Including a unique hand-drawn\r\nadvertisement by the author,\r\nfor our subscribers</p>",
+      "price": 15.0,
+      "date_created": "string",
+      "date_updated": "string"
+    },
+    {
+      "id": 3,
+      "title": "Headaset Chichi",
+      "slug": "headaset-chichi",
+      "category": "earpearp",
+      "cover": "assets/images/3.jpg",
+      "summary": "<p>Sam Chermayeff (et al.)<br>\r\nCreatures<br>\r\nApartamento Publishing, 2020</p>\r\n<p>Including a unique hand-drawn\r\nadvertisement by the author,\r\nfor our subscribers</p>",
+      "price": 15.0,
+      "date_created": "string",
+      "date_updated": "string"
+    },
+    {
+      "id": 4,
+      "title": "Headaset Chichi",
+      "slug": "headaset-chichi",
+      "category": "earpearp",
+      "cover": "assets/images/4.jpg",
+      "summary": "<p>Sam Chermayeff (et al.)<br>\r\nCreatures<br>\r\nApartamento Publishing, 2020</p>\r\n<p>Including a unique hand-drawn\r\nadvertisement by the author,\r\nfor our subscribers</p>",
+      "price": 15.0,
+      "date_created": "string",
+      "date_updated": "string"
+    },
+    {
+      "id": 5,
+      "title": "Headaset Chichi",
+      "slug": "headaset-chichi",
+      "category": "earpearp",
+      "cover": "assets/images/5.jpg",
+      "summary": "<p>Sam Chermayeff (et al.)<br>\r\nCreatures<br>\r\nApartamento Publishing, 2020</p>\r\n<p>Including a unique hand-drawn\r\nadvertisement by the author,\r\nfor our subscribers</p>",
+      "price": 15.0,
+      "date_created": "string",
+      "date_updated": "string"
+    },
+    {
+      "id": 6,
+      "title": "Headaset Chichi",
+      "slug": "headaset-chichi",
+      "category": "earpearp",
+      "cover": "assets/images/6.jpg",
+      "summary": "<p>Including a unique hand-drawn\r\nadvertisement by the author,\r\nfor our subscribers</p>",
+      "price": 15.0,
+      "date_created": "string",
+      "date_updated": "string"
+    },
+    {
+      "id": 7,
+      "title": "Headaset Chichi",
+      "slug": "headaset-chichi",
+      "category": "earpearp",
+      "cover": "assets/images/7.jpg",
+      "summary": "<p>Sam Chermayeff (et al.)<br>\r\nCreatures<br>\r\nApartamento Publishing, 2020</p>\r\n<p>Including a unique hand-drawn\r\nadvertisement by the author,\r\nfor our subscribers</p>",
+      "price": 15.0,
+      "date_created": "string",
+      "date_updated": "string"
+    },
+    {
+      "id": 8,
+      "title": "Headaset Chichi",
+      "slug": "headaset-chichi",
+      "category": "earpearp",
+      "cover": "assets/images/8.jpg",
+      "summary": "<p>Sam Chermayeff (et al.)<br>\r\nCreatures<br>\r\nApartamento Publishing, 2020</p>\r\n<p>Including a unique hand-drawn\r\nadvertisement by the author,\r\nfor our subscribers</p>",
+      "price": 15.0,
+      "date_created": "string",
+      "date_updated": "string"
+    },
+    {
+      "id": 9,
+      "title": "Headaset Chichi",
+      "slug": "headaset-chichi",
+      "category": "earpearp",
+      "cover": "assets/images/9.jpg",
+      "summary": "<p>Sam Chermayeff (et al.)<br>\r\nCreatures<br>\r\nApartamento Publishing, 2020</p>\r\n<p>Including a unique hand-drawn\r\nadvertisement by the author,\r\nfor our subscribers</p>",
+      "price": 15.0,
+      "date_created": "string",
+      "date_updated": "string"
+    },
+    {
+      "id": 10,
+      "title": "Headaset Chichi",
+      "slug": "headaset-chichi",
+      "category": "earpearp",
+      "cover": "assets/images/10.jpg",
+      "summary": "<p>Sam Chermayeff (et al.)<br>\r\nCreatures<br>\r\nApartamento Publishing, 2020</p>\r\n<p>Including a unique hand-drawn\r\nadvertisement by the author,\r\nfor our subscribers</p>",
+      "price": 15.0,
+      "date_created": "string",
+      "date_updated": "string"
+    }
+  ]
+}

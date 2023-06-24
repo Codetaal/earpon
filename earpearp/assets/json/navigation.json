@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "title": "Products",
+      "slug": "products",
+      "children": [
+        {
+          "title": "Products",
+          "slug": "products"
+        }
+      ]
+    }
+  ]
+}
