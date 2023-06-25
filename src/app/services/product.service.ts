@@ -28,7 +28,7 @@ export class ProductService {
 
   public getProducts(): Observable<ProductsResponseInterface> {
     return this.httpClient
-      .get<ProductsResponseInterface>(`./../assets/json/products.json`)
+      .get<ProductsResponseInterface>(`./assets/json/products.json`)
       .pipe(shareReplay());
   }
 }

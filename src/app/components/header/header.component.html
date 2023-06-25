@@ -1,5 +1,5 @@
-<header class="top-0 z-10 w-full bg-white group px-3.5 lg:px-6 py-6 group/header" data-js="header"
-    data-is-fixed="false">
+<header class="top-0 z-10 w-full bg-white group px-3.5 lg:px-6 py-6 [&.is-active]:min-h-screen lg:[&.is-active]:min-h-0"
+    data-js="header" data-is-fixed="false">
     <div class="grid grid-flow-row gap-y-6 lg:gap-6 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 lg:grid-flow-col">
         <div class="flex items-center justify-between lg:block">
             <div class="border-l border-gray-900 pl-3.5 pt-2 pb-2 relative w-full flex justify-between items-center">
@@ -7,14 +7,18 @@
                     <a href="/" class="tracking-[8px]">EAR<br class="hidden lg:inline">PON</a>
                     <div class="hidden w-full h-8 lg:block" data-js="spacer"></div>
                 </h1>
-                <span class="absolute right-0 cursor-pointer select-none">
+                <span class="absolute right-0 cursor-pointer select-none" data-js="menuIcon">
+                    <!-- menu opened -->
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
-                        stroke="currentColor" class="block w-6 h-6 lg:hidden group-hover:hidden lg:group-hover:hidden">
+                        stroke="currentColor"
+                        class="block w-6 h-6 lg:hidden group-[&.is-active]:hidden lg:group-[&.is-active]:hidden">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
+                    <!-- menu closed -->
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
-                        stroke="currentColor" class="hidden w-6 h-6 lg:hidden group-hover:block lg:group-hover:hidden">
+                        stroke="currentColor"
+                        class="hidden w-6 h-6 lg:hidden group-[&.is-active]:block lg:group-[&.is-active]:hidden">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </span>

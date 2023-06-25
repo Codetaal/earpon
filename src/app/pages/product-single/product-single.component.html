@@ -1,33 +1,31 @@
 <div
-    class="mt-0 lg:mt-12 px-3.5 lg:px-6 grid grid-flow-row gap-y-6 lg:gap-6 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 lg:grid-flow-col relative mb-12">
-    <div class="lg:col-span-2 2xl:col-start-2">
-        <div class="border-l border-gray-900 pl-3.5 relative w-full">
-            <div class="overflow-hidden overflow-x-auto snap-x snap-mandatory scrollbar scrollbar-x">
-                <div class="flex pointer-events-none select-none">
-                    <figure class="flex-shrink-0 w-full snap-start">
-                        <img src="{{ product.cover }}" class="w-full aspect-square" alt="">
-                    </figure>
-                    <figure class="flex-shrink-0 w-full snap-start">
-                        <img src="assets/images/5.jpg" class="w-full aspect-square" alt="">
-                    </figure>
-                    <figure class="flex-shrink-0 w-full snap-start">
-                        <img src="assets/images/6.jpg" class="w-full aspect-square" alt="">
-                    </figure>
-                    <figure class="flex-shrink-0 w-full snap-start">
-                        <img src="assets/images/9.jpg" class="w-full aspect-square" alt="">
-                    </figure>
-                </div>
+    class="border-l border-gray-900 lg:border-l-0 mt-0 lg:mt-12 mx-3.5 lg:mx-6 grid lg:gap-x-6 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 lg:grid-flow-col relative mb-12">
+    <!-- cover -->
+    <div class="lg:col-span-2 2xl:col-start-2 pl-3.5 relative w-full lg:border-l lg:border-gray-900 mb-4">
+        <!-- slide container -->
+        <div class="overflow-hidden overflow-x-auto snap-x snap-mandatory" data-js="product-slider">
+            <div class="flex pointer-events-none select-none">
+                <figure class="flex-shrink-0 w-full snap-start">
+                    <img src="{{ product.cover }}" class="w-full aspect-square" alt="">
+                </figure>
+                <figure class="flex-shrink-0 w-full snap-start">
+                    <img src="assets/images/5.jpg" class="w-full aspect-square" alt="">
+                </figure>
+                <figure class="flex-shrink-0 w-full snap-start">
+                    <img src="assets/images/6.jpg" class="w-full aspect-square" alt="">
+                </figure>
+                <figure class="flex-shrink-0 w-full snap-start">
+                    <img src="assets/images/9.jpg" class="w-full aspect-square" alt="">
+                </figure>
             </div>
-            <!-- <div class="grid gap-x-3.5 grid-cols-4">
-                <div class="flex-shrink ">
-                    <img src="assets/images/1.jpg" class=" aspect-square">
-                </div>
-                <div class=""><img src="assets/images/2.jpg" class=" aspect-square"></div>
-                <div class=""><img src="assets/images/3.jpg" class=" aspect-square"></div>
-                <div class=""><img src="assets/images/4.jpg" class=" aspect-square"></div>
-            </div> -->
         </div>
+        <!-- ngif cover > 1 -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
+            class="absolute w-6 h-6 text-blue-700 transform -translate-y-1/2 right-6 top-1/2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+        </svg>
     </div>
+    <!-- info -->
     <div class="2xl:col-start-4"><!-- just for border alignment -->
         <app-receipt [product]="product"></app-receipt>
     </div>

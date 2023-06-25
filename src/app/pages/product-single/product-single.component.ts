@@ -2,6 +2,7 @@ import { ProductService } from '../../services/product.service';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { Router, NavigationEnd } from '@angular/router';
 
 import {
   ProductInterface,
@@ -22,20 +23,32 @@ export class ProductSingleComponent implements OnInit, OnDestroy {
     cover: 'assets/images/placeholder.jpg',
   };
 
+  productSlideEl!: any;
+
   private routeSubscription!: Subscription;
 
   constructor(
     private route: ActivatedRoute,
-    private productService: ProductService
+    private productService: ProductService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
     this.routeSubscription = this.route.params.subscribe((params) => {
+      this.products = [];
       this.id = +params['id'];
       this.loadProduct();
     });
-    // this.id = Number(this.route.snapshot.params['id']);
-    // console.log('init');
+  }
+
+  ngAfterViewInit(): void {
+    this.productSlideEl = document.querySelector('[data-js="product-slider"]');
+
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.productSlideEl.scrollLeft = 0;
+      }
+    });
   }
 
   ngOnDestroy() {

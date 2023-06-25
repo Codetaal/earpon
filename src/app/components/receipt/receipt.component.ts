@@ -30,7 +30,11 @@ export class ReceiptComponent implements OnInit {
       this.setReceiptOffset();
     });
 
-    this.header.addEventListener('mouseout', () => {
+    this.header.addEventListener('mouseenter', () => {
+      this.setReceiptOffset();
+    });
+
+    this.header.addEventListener('mouseleave', () => {
       this.setReceiptOffset();
     });
   }

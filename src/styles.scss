@@ -60,31 +60,58 @@ html {
 //   @apply mb-3;
 // }
 
-header[data-is-fixed="true"]:not(:hover) {
+// header[data-is-fixed="true"]:not(:hover) {
+//   [data-js="menu"] li:not(.is-active),
+//   [data-js="logo"] br,
+//   [data-js="spacer"],
+//   [data-js="site-summary"] section:not(:first-child) {
+//     display: none;
+//   }
+
+//   // [data-js="menu"] li.is-active {
+//   //   @apply mb-0;
+//   // }
+// }
+
+// header[data-is-fixed="true"]:not(:hover) {
+//   [data-js="menu"] li:not(.is-active),
+//   [data-js="logo"] br,
+//   [data-js="spacer"],
+//   [data-js="site-summary"] section:not(:first-child) {
+//     display: none;
+//   }
+
+// }
+
+// header:hover {
+//   [data-js="menu"],
+//   [data-js="menu2"],
+//   [data-js="site-summary"] {
+//     display: block;
+//   }
+// }
+
+// [data-js="header"][data-is-fixed="true"] {
+//   @apply bg-black;
+//   @apply text-white;
+// }
+
+header[data-is-fixed="true"]:not(.is-active) {
   [data-js="menu"] li:not(.is-active),
   [data-js="logo"] br,
   [data-js="spacer"],
   [data-js="site-summary"] section:not(:first-child) {
     display: none;
   }
-
-  // [data-js="menu"] li.is-active {
-  //   @apply mb-0;
-  // }
 }
 
-header:hover {
+header.is-active {
   [data-js="menu"],
   [data-js="menu2"],
   [data-js="site-summary"] {
     display: block;
   }
 }
-
-// [data-js="header"][data-is-fixed="true"] {
-//   @apply bg-black;
-//   @apply text-white;
-// }
 
 /* Snipcart repair */
 .snipcart-base-button {
